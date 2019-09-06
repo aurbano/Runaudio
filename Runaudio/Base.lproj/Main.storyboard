@@ -33,7 +33,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNp-0b-Y5R">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNp-0b-Y5R" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="44" width="414" height="262"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -54,8 +54,8 @@
                     </view>
                     <connections>
                         <outlet property="bpmLabel" destination="69C-Co-0yr" id="2pG-2n-dwx"/>
+                        <outlet property="chartView" destination="UNp-0b-Y5R" id="G9k-2w-frK"/>
                         <outlet property="stepsLabel" destination="Qu5-zE-lit" id="jFt-7G-YDf"/>
-                        <outlet property="view" destination="UNp-0b-Y5R" id="UB4-ed-R3D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -36,6 +36,7 @@ class ViewController: UIViewController, ChartViewDelegate {
     var threshold = 0.3
     var waitInterval = 0.4
     var avgTimingSteps = 5 // Adjusts based on speed
+    let maxStepForceMeasures = 100
     
     // Vars
     var accelTimer: Timer?
@@ -59,6 +60,7 @@ class ViewController: UIViewController, ChartViewDelegate {
             let absSum = x*x + y*y + z*z
             let value = absSum.squareRoot()
             seq.append(value)
+            self.addDataPoint(x: Double(seq.count), y: value)
             
             let total = seq.reduce(0, +)
             var avg = 0.0
@@ -66,7 +68,7 @@ class ViewController: UIViewController, ChartViewDelegate {
             if (total > 0) {
                 avg = total / Double(seq.count)
             }
-            if (seq.count > 100) {
+            if (seq.count > maxStepForceMeasures) {
                 seq.removeFirst()
             }
             
@@ -112,14 +114,6 @@ class ViewController: UIViewController, ChartViewDelegate {
                 let bpm = floor(60.0 / avgTiming * pow(10, 9))
                 bpmLabel.text = String(bpm)
                 
-//                if (bpm > 110) {
-//                    avgTimingSteps = 10
-//                } else if (bpm > 70) {
-//                    avgTimingSteps = 7
-//                } else {
-//                    avgTimingSteps = 5
-//                }
-                
                 startStep = DispatchTime.now()
                 
                 resetStepTimer = Timer.scheduledTimer(
@@ -142,7 +136,25 @@ class ViewController: UIViewController, ChartViewDelegate {
     }
     
     func setupChart() {
-        chartView.delegate = self
+        self.chartView.delegate = self
+        
+        let combined: LineChartDataSet = LineChartDataSet(entries: [ChartDataEntry](), label: "combined")
+        
+        combined.drawCirclesEnabled = false
+        combined.setColor(UIColor.red)
+        combined.drawValuesEnabled = false
+        
+        self.chartView.pinchZoomEnabled = false
+        self.chartView.doubleTapToZoomEnabled = false
+        
+        self.chartView.data = LineChartData(dataSets: [combined])
+        self.chartView.setVisibleXRange(minXRange: Double(1), maxXRange: Double(maxStepForceMeasures))
+    }
+    
+    func addDataPoint(x: Double, y: Double) {
+        self.chartView.data?.addEntry(ChartDataEntry(x: x, y: y), dataSetIndex: 0)
+        self.chartView.notifyDataSetChanged()
+        self.chartView.moveViewToX(x)
     }
     
     func adaptThreshold() {

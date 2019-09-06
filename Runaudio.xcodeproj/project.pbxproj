@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5D526CAD27F17B9C88A662D6 /* Pods_RunaudioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAC353EB2E175E561162ED8 /* Pods_RunaudioTests.framework */; };
 		F7BBBDADD16A2619F3DA620D /* Pods_Runaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9325D8FFFB4C16AB27EC969 /* Pods_Runaudio.framework */; };
+		FA6BA9252322860200246ED7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6BA9242322860200246ED7 /* Charts.framework */; };
+		FA6BA92723228A5D00246ED7 /* runaudio.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6BA92623228A5D00246ED7 /* runaudio.png */; };
 		FAA177332321D52A00C5C8EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA177322321D52A00C5C8EC /* AppDelegate.swift */; };
 		FAA177352321D52A00C5C8EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA177342321D52A00C5C8EC /* ViewController.swift */; };
 		FAA177382321D52A00C5C8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA177362321D52A00C5C8EC /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		D9325D8FFFB4C16AB27EC969 /* Pods_Runaudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runaudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC518C2867DEA9164A6FDD28 /* Pods-Runaudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runaudio.release.xcconfig"; path = "Target Support Files/Pods-Runaudio/Pods-Runaudio.release.xcconfig"; sourceTree = "<group>"; };
 		FA6BA92223226C6E00246ED7 /* SwiftChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6BA9242322860200246ED7 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6BA92623228A5D00246ED7 /* runaudio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runaudio.png; sourceTree = "<group>"; };
 		FAA1772F2321D52A00C5C8EC /* Runaudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runaudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA177322321D52A00C5C8EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA177342321D52A00C5C8EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6BA9252322860200246ED7 /* Charts.framework in Frameworks */,
 				F7BBBDADD16A2619F3DA620D /* Pods_Runaudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +101,7 @@
 		65E42DAB362F62526B25FE9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA6BA9242322860200246ED7 /* Charts.framework */,
 				FA6BA92223226C6E00246ED7 /* SwiftChart.framework */,
 				D9325D8FFFB4C16AB27EC969 /* Pods_Runaudio.framework */,
 				0CAC353EB2E175E561162ED8 /* Pods_RunaudioTests.framework */,
@@ -132,6 +138,7 @@
 				FAA1773C2321D52C00C5C8EC /* Assets.xcassets */,
 				FAA1773E2321D52C00C5C8EC /* LaunchScreen.storyboard */,
 				FAA177412321D52C00C5C8EC /* Info.plist */,
+				FA6BA92623228A5D00246ED7 /* runaudio.png */,
 				FAA177392321D52A00C5C8EC /* Runaudio.xcdatamodeld */,
 			);
 			path = Runaudio;
@@ -232,6 +239,7 @@
 			files = (
 				FAA177402321D52C00C5C8EC /* LaunchScreen.storyboard in Resources */,
 				FAA1773D2321D52C00C5C8EC /* Assets.xcassets in Resources */,
+				FA6BA92723228A5D00246ED7 /* runaudio.png in Resources */,
 				FAA177382321D52A00C5C8EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
