@@ -8,13 +8,13 @@
 import UIKit
 import CoreMotion
 import AVFoundation
-import SwiftChart
+import Charts
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var bpmLabel: UILabel!
     @IBOutlet weak var stepsLabel: UILabel!
-    @IBOutlet weak var chart: Chart!
+    @IBOutlet weak var chartView: LineChartView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -142,10 +142,7 @@ class ViewController: UIViewController {
     }
     
     func setupChart() {
-        chart.delegate = self
-        
-        let series = ChartSeries([0, 6.5, 2, 8, 4.1, 7, -3.1, 10, 8])
-        chart.add(series)
+        chartView.delegate = self
     }
     
     func adaptThreshold() {

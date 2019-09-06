@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,6 +48,7 @@
 		D15BA499E0AA517BB8EF10CB /* Pods-RunaudioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunaudioTests.release.xcconfig"; path = "Target Support Files/Pods-RunaudioTests/Pods-RunaudioTests.release.xcconfig"; sourceTree = "<group>"; };
 		D9325D8FFFB4C16AB27EC969 /* Pods_Runaudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runaudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC518C2867DEA9164A6FDD28 /* Pods-Runaudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runaudio.release.xcconfig"; path = "Target Support Files/Pods-Runaudio/Pods-Runaudio.release.xcconfig"; sourceTree = "<group>"; };
+		FA6BA92223226C6E00246ED7 /* SwiftChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA1772F2321D52A00C5C8EC /* Runaudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runaudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA177322321D52A00C5C8EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA177342321D52A00C5C8EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,13 +90,13 @@
 				A81F1B6E52776ACE95B81210 /* Pods-RunaudioTests.debug.xcconfig */,
 				D15BA499E0AA517BB8EF10CB /* Pods-RunaudioTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		65E42DAB362F62526B25FE9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA6BA92223226C6E00246ED7 /* SwiftChart.framework */,
 				D9325D8FFFB4C16AB27EC969 /* Pods_Runaudio.framework */,
 				0CAC353EB2E175E561162ED8 /* Pods_RunaudioTests.framework */,
 			);

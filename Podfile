@@ -8,7 +8,7 @@ target 'Runaudio' do
   use_frameworks!
 
   # Pods for Runaudio
-  pod "SwiftChart"
+  pod "Charts"
 
   target 'RunaudioTests' do
     inherit! :search_paths

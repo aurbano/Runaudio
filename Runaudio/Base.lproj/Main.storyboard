@@ -54,8 +54,8 @@
                     </view>
                     <connections>
                         <outlet property="bpmLabel" destination="69C-Co-0yr" id="2pG-2n-dwx"/>
-                        <outlet property="chart" destination="UNp-0b-Y5R" id="sYa-uS-5KU"/>
                         <outlet property="stepsLabel" destination="Qu5-zE-lit" id="jFt-7G-YDf"/>
+                        <outlet property="view" destination="UNp-0b-Y5R" id="UB4-ed-R3D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
