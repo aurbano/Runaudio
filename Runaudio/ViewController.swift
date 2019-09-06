@@ -28,26 +28,30 @@ class ViewController: UIViewController, ChartViewDelegate {
     
     // Params
     let freq = 100.0 // in Hz
-    let stepsForThresholdCalc = 3 // previous steps to use in threshold calculation
-    let autoThresholdPercent = 0.05 // how much to remove from the max to get the new threshold
-    let minThreshold = 0.1
-    let maxThreshold = 0.7
-    let maxWaitInterval = 0.6
-    var threshold = 0.3
-    var waitInterval = 0.4
-    var avgTimingSteps = 5 // Adjusts based on speed
-    let maxStepForceMeasures = 100
+    let autoThresholdPercent = 0.2 // how much to remove from the max to get the new threshold
+    let maxWaitInterval = 0.6 // maximum amount of time between allowing another step to be measured
+    let avgTimingSteps = 5 // How many steps to take into account for timing
+    let maxStepForceMeasures = 200 // Number of measurements to store in memory for the baseline calc
+    let peakMemory = 50 // how many previous measurements to use to find the new min threshold
+    let maxPeak = -1.5 // minimum threshold
     
     // Vars
+    let motion = CMMotionManager()
     var accelTimer: Timer?
     var resetStepTimer: Timer?
     var waiting: Bool = false
-    let motion = CMMotionManager()
     var seq = [Double]()
     var steps = 0
-    var dir = -1.0
     var startStep: DispatchTime?
     var stepTimings = [Double]()
+    var chartIndex = 0
+    
+    // The following are automatically adjusted
+    var baseline = -1.0
+    var minPeak = -10.0
+    var threshold = -1.5
+    var waitInterval = 0.3
+    
     
     @objc
     func parseData() {
@@ -56,29 +60,40 @@ class ViewController: UIViewController, ChartViewDelegate {
             let y = data.acceleration.y
             let z = data.acceleration.z
             
-            let sum = x + y + z
-            let absSum = x*x + y*y + z*z
-            let value = absSum.squareRoot()
-            seq.append(value)
-            self.addDataPoint(x: Double(seq.count), y: value)
+            let value = x + y + z
+            
+            if (value.isNaN || value.isInfinite) {
+                return
+            }
             
             let total = seq.reduce(0, +)
-            var avg = 0.0
-
-            if (total > 0) {
-                avg = total / Double(seq.count)
+            if (!total.isNaN && seq.count > 0) {
+                baseline = total / Double(seq.count)
             }
+            
             if (seq.count > maxStepForceMeasures) {
                 seq.removeFirst()
             }
             
-            let current = abs(Double(value) - Double(avg))
+            let current = Double(value) - baseline
             
-            let sameDirection = ((sum < 0) == (dir < 0))
-            if (sameDirection && current > threshold && waiting == false) {
+            // find minimums to adjust the threshold
+            let newMin = seq.suffix(peakMemory).min()
+            if (newMin != nil) {
+                if (newMin! - baseline < minPeak) {
+                    print("new min", newMin! - baseline);
+                }
+                minPeak = min(maxPeak, newMin! - baseline)
+            }
+            
+            self.threshold = minPeak * (1 - autoThresholdPercent)
+            
+            seq.append(Double(value))
+            self.addDataPoint(y: current)
+            
+            if (current < threshold && waiting == false) {
                 self.view.backgroundColor = UIColor.red
                 waiting = true
-                dir = sum
                 
                 steps = steps + 1
                 stepsLabel.text = String(steps)
@@ -106,7 +121,7 @@ class ViewController: UIViewController, ChartViewDelegate {
                 }
                 
                 if (avgTiming > 0) {
-                    let timing = avgTiming * 0.7 / 1000000000
+                    let timing = avgTiming * 0.3 / 1000000000
                     waitInterval = min(maxWaitInterval, timing)
                 }
                 
@@ -123,8 +138,6 @@ class ViewController: UIViewController, ChartViewDelegate {
                     userInfo: nil,
                     repeats: false
                 )
-                
-                self.adaptThreshold()
             }
         }
     }
@@ -141,35 +154,39 @@ class ViewController: UIViewController, ChartViewDelegate {
         let combined: LineChartDataSet = LineChartDataSet(entries: [ChartDataEntry](), label: "combined")
         
         combined.drawCirclesEnabled = false
-        combined.setColor(UIColor.red)
+        combined.setColor(UIColor.black)
         combined.drawValuesEnabled = false
+        combined.lineWidth = 1
         
         self.chartView.pinchZoomEnabled = false
         self.chartView.doubleTapToZoomEnabled = false
         
         self.chartView.data = LineChartData(dataSets: [combined])
-        self.chartView.setVisibleXRange(minXRange: Double(1), maxXRange: Double(maxStepForceMeasures))
+        
+        let leftAxis = self.chartView.leftAxis
+        leftAxis.removeAllLimitLines()
+        leftAxis.gridLineDashLengths = [1, 1]
+        leftAxis.drawLimitLinesBehindDataEnabled = true
     }
     
-    func addDataPoint(x: Double, y: Double) {
+    func addDataPoint(y: Double) {
+        let x = Double(chartIndex)
+        chartIndex = chartIndex + 1
         self.chartView.data?.addEntry(ChartDataEntry(x: x, y: y), dataSetIndex: 0)
         self.chartView.notifyDataSetChanged()
         self.chartView.moveViewToX(x)
-    }
-    
-    func adaptThreshold() {
-        // adapt the threshold based on the maximums of the last few steps
-        guard let maxStep = seq.suffix(stepsForThresholdCalc).max() else {
-            return
-        }
-        threshold = min(
-            maxThreshold,
-            max(
-                minThreshold,
-                maxStep * (1 - autoThresholdPercent)
-            )
-        )
-        print("threshold", threshold)
+        
+        let maxX = min(maxStepForceMeasures, seq.count)
+        self.chartView.setVisibleXRange(minXRange: Double(1), maxXRange: Double(maxX))
+        
+        let thresholdLimit = ChartLimitLine(limit: minPeak, label: "Threshold")
+        thresholdLimit.lineWidth = 2
+        thresholdLimit.labelPosition = .topRight
+        thresholdLimit.valueFont = .systemFont(ofSize: 10)
+        
+        let leftAxis = chartView.leftAxis
+        leftAxis.removeAllLimitLines()
+        leftAxis.addLimitLine(thresholdLimit)
     }
     
     func startAccelerometers() {
