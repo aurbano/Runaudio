@@ -34,6 +34,7 @@ class ViewController: UIViewController, ChartViewDelegate {
     let maxStepForceMeasures = 200 // Number of measurements to store in memory for the baseline calc
     let peakMemory = 50 // how many previous measurements to use to find the new min threshold
     let maxPeak = -1.5 // minimum threshold
+    let chartEnabled = false
     
     // Vars
     let motion = CMMotionManager()
@@ -80,9 +81,6 @@ class ViewController: UIViewController, ChartViewDelegate {
             // find minimums to adjust the threshold
             let newMin = seq.suffix(peakMemory).min()
             if (newMin != nil) {
-                if (newMin! - baseline < minPeak) {
-                    print("new min", newMin! - baseline);
-                }
                 minPeak = min(maxPeak, newMin! - baseline)
             }
             
@@ -170,6 +168,10 @@ class ViewController: UIViewController, ChartViewDelegate {
     }
     
     func addDataPoint(y: Double) {
+        if (!chartEnabled) {
+            return
+        }
+        
         let x = Double(chartIndex)
         chartIndex = chartIndex + 1
         self.chartView.data?.addEntry(ChartDataEntry(x: x, y: y), dataSetIndex: 0)
