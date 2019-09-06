@@ -1,0 +1,6 @@
+framework module Pods_Runaudio {
+  umbrella header "Pods-Runaudio-umbrella.h"
+
+  export *
+  module * { export * }
+}

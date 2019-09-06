@@ -8,11 +8,13 @@
 import UIKit
 import CoreMotion
 import AVFoundation
+import SwiftChart
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var bpmLabel: UILabel!
     @IBOutlet weak var stepsLabel: UILabel!
+    @IBOutlet weak var chart: Chart!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,7 @@ class ViewController: UIViewController {
         bpmLabel.text = String(0)
         stepsLabel.text = String(0)
         
+        setupChart()
         startAccelerometers()
     }
     
@@ -136,6 +139,13 @@ class ViewController: UIViewController {
     func endStep() {
         waiting = false
         self.view.backgroundColor = UIColor.white
+    }
+    
+    func setupChart() {
+        chart.delegate = self
+        
+        let series = ChartSeries([0, 6.5, 2, 8, 4.1, 7, -3.1, 10, 8])
+        chart.add(series)
     }
     
     func adaptThreshold() {

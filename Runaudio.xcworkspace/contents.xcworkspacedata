@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:runaudio.png">
+      location = "group:Runaudio.xcodeproj">
    </FileRef>
    <FileRef
-      location = "self:">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

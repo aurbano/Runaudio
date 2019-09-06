@@ -33,6 +33,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNp-0b-Y5R">
+                                <rect key="frame" x="0.0" y="44" width="414" height="262"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -43,11 +47,14 @@
                             <constraint firstItem="69C-Co-0yr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TIu-NK-ubh"/>
                             <constraint firstItem="69C-Co-0yr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iHf-6h-oEV"/>
                             <constraint firstAttribute="trailing" secondItem="69C-Co-0yr" secondAttribute="trailing" id="lNp-Y8-i5j"/>
+                            <constraint firstItem="UNp-0b-Y5R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oq6-hO-JF1"/>
+                            <constraint firstItem="UNp-0b-Y5R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pPP-vm-F5W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="bpmLabel" destination="69C-Co-0yr" id="2pG-2n-dwx"/>
+                        <outlet property="chart" destination="UNp-0b-Y5R" id="sYa-uS-5KU"/>
                         <outlet property="stepsLabel" destination="Qu5-zE-lit" id="jFt-7G-YDf"/>
                     </connections>
                 </viewController>

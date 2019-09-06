@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EFE27A8EFE011B8758BD790F5ECA609 /* SwiftChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB198D40652FA49A604F9A7C4E9F37A2 /* SwiftChart-dummy.m */; };
+		270E08054AD0B2EE58FC977AC6511CB6 /* Pods-RunaudioTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2B03D3937223B1B202FB846EAFDD16 /* Pods-RunaudioTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373C85B7B6669A0A3705344EDAB91402 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAAC77638A2D9B88445D4DCE34BD6E1 /* ChartColors.swift */; };
+		9B6B025901B92784B8037B236F392AA3 /* SwiftChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD215E44BE794458FAF6F7C69AEC9E9 /* SwiftChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EDDB5C72F0097B88631DA9EE8C1AEFF /* Pods-Runaudio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97545677D077576167604DC1E20AA0BF /* Pods-Runaudio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A21D47848E88C14CD22986509D47A5C6 /* Pods-RunaudioTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F21183F3A1B6AB718DA5AA57FAB55E /* Pods-RunaudioTests-dummy.m */; };
+		AABB25CD63C72262E7FFE6F57470ACE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		B6613C0A904ECFDCC0150613D7AF1206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		E89F36993229D1B75DDCC7E56FC12B62 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB13F972F3B77B583645B30A456160E /* Chart.swift */; };
+		EA9429AB72E0C8A263556D3C54AB37E4 /* Pods-Runaudio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3935B022FAF355FF1967AA90A3620 /* Pods-Runaudio-dummy.m */; };
+		EB086D60CEC6F2B6E12D029C7B07680D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		F65A1ED8B29A8BE6BC13EBA5A55D4E8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		F7951E078EEAB8901537CEA3C6C01859 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A165B1AD01E5C3249C068D45536F95 /* ChartSeries.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C97B10F7D3D1D4C0FE72F6721EBCC73E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E7BD5B8067AD0B7AFB7967E30BF1BB8;
+			remoteInfo = SwiftChart;
+		};
+		EAC1E225BDFD0B761326DE56769AED09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94339D919B9190B85A8FFC566697EC4B;
+			remoteInfo = "Pods-Runaudio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02A165B1AD01E5C3249C068D45536F95 /* ChartSeries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartSeries.swift; path = Source/ChartSeries.swift; sourceTree = "<group>"; };
+		0386647CB37914AEC8D0A23E3BF2B668 /* SwiftChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftChart.framework; path = SwiftChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EAAC77638A2D9B88445D4DCE34BD6E1 /* ChartColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartColors.swift; path = Source/ChartColors.swift; sourceTree = "<group>"; };
+		2118901B203E7EDAB5A4F7146A7E19F0 /* Pods_Runaudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Runaudio.framework; path = "Pods-Runaudio.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2695439229F47F6AB0E5D9E67930BD7B /* Pods-Runaudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runaudio.debug.xcconfig"; sourceTree = "<group>"; };
+		27F21183F3A1B6AB718DA5AA57FAB55E /* Pods-RunaudioTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RunaudioTests-dummy.m"; sourceTree = "<group>"; };
+		2CB13F972F3B77B583645B30A456160E /* Chart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Chart.swift; path = Source/Chart.swift; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		405F2AB788AF47503DA6A26C3CB505FF /* Pods-RunaudioTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RunaudioTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		442D8ADF2345156F008BFA97E8A98038 /* Pods-RunaudioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RunaudioTests.release.xcconfig"; sourceTree = "<group>"; };
+		4EEC1BB59E70C74257CAE9A6325A7AE6 /* Pods-Runaudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runaudio.release.xcconfig"; sourceTree = "<group>"; };
+		5D2EBFD21043D9357A5BC5DCB7BCD797 /* Pods-RunaudioTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RunaudioTests.modulemap"; sourceTree = "<group>"; };
+		677CBCEC0EC88B47AFC89C19C9F0C6C5 /* Pods-Runaudio-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runaudio-Info.plist"; sourceTree = "<group>"; };
+		7D919E1CD4CF836C0D3C2338F06731FC /* Pods_RunaudioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RunaudioTests.framework; path = "Pods-RunaudioTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8752C5AEA43889E38E52AF306FA80A0A /* SwiftChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftChart.xcconfig; sourceTree = "<group>"; };
+		8DC3935B022FAF355FF1967AA90A3620 /* Pods-Runaudio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runaudio-dummy.m"; sourceTree = "<group>"; };
+		8E2B03D3937223B1B202FB846EAFDD16 /* Pods-RunaudioTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RunaudioTests-umbrella.h"; sourceTree = "<group>"; };
+		97545677D077576167604DC1E20AA0BF /* Pods-Runaudio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Runaudio-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E080BC0CD223CF34EFA798FB730E0EF /* SwiftChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-prefix.pch"; sourceTree = "<group>"; };
+		B03DF648E7FFC8BDD9C2D2CEC5F77FFC /* Pods-Runaudio-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runaudio-acknowledgements.plist"; sourceTree = "<group>"; };
+		B1A24B00EF1BDA4BB39FB68245ED8303 /* Pods-Runaudio-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Runaudio-frameworks.sh"; sourceTree = "<group>"; };
+		B3166D6C96AA390E083128A75651301A /* Pods-RunaudioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RunaudioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2D78EAE628C37FE9D6783CD0044C6F3 /* Pods-RunaudioTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RunaudioTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DBB9B54989D929FF3EF43293E8ED07FF /* Pods-Runaudio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Runaudio.modulemap"; sourceTree = "<group>"; };
+		DE037464336B1776BF19E61E5CA54E18 /* Pods-RunaudioTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RunaudioTests-Info.plist"; sourceTree = "<group>"; };
+		DF8B3AF368B504A374DA4F2A6DD7365E /* SwiftChart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftChart-Info.plist"; sourceTree = "<group>"; };
+		E8A67E25D6AF290C2828181A9A59A25C /* Pods-Runaudio-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runaudio-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EAB070CCCAF72189F3A0D131FF6DD343 /* SwiftChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftChart.modulemap; sourceTree = "<group>"; };
+		EDD215E44BE794458FAF6F7C69AEC9E9 /* SwiftChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-umbrella.h"; sourceTree = "<group>"; };
+		FB198D40652FA49A604F9A7C4E9F37A2 /* SwiftChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftChart-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BDE090C8E16BD79F035AB4D2001F6A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB086D60CEC6F2B6E12D029C7B07680D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564E6960EAF4924DA2F9090BE9AE8B79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65A1ED8B29A8BE6BC13EBA5A55D4E8A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C75323E3A181BCC5B455CBD0102BF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6613C0A904ECFDCC0150613D7AF1206 /* Foundation.framework in Frameworks */,
+				AABB25CD63C72262E7FFE6F57470ACE0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		014D9A23DCF636B706FBAC2ACE3CCB5D /* Pods-Runaudio */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9B54989D929FF3EF43293E8ED07FF /* Pods-Runaudio.modulemap */,
+				E8A67E25D6AF290C2828181A9A59A25C /* Pods-Runaudio-acknowledgements.markdown */,
+				B03DF648E7FFC8BDD9C2D2CEC5F77FFC /* Pods-Runaudio-acknowledgements.plist */,
+				8DC3935B022FAF355FF1967AA90A3620 /* Pods-Runaudio-dummy.m */,
+				B1A24B00EF1BDA4BB39FB68245ED8303 /* Pods-Runaudio-frameworks.sh */,
+				677CBCEC0EC88B47AFC89C19C9F0C6C5 /* Pods-Runaudio-Info.plist */,
+				97545677D077576167604DC1E20AA0BF /* Pods-Runaudio-umbrella.h */,
+				2695439229F47F6AB0E5D9E67930BD7B /* Pods-Runaudio.debug.xcconfig */,
+				4EEC1BB59E70C74257CAE9A6325A7AE6 /* Pods-Runaudio.release.xcconfig */,
+			);
+			name = "Pods-Runaudio";
+			path = "Target Support Files/Pods-Runaudio";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71B7291F733237863A94361DDBD72A96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				844677AADEDF0E1ABE8C8BEA308D72CE /* SwiftChart */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71E064E4EA0FFCD9221FBA0C5A6BBFC0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				014D9A23DCF636B706FBAC2ACE3CCB5D /* Pods-Runaudio */,
+				D12CEC5BDDB748CB27B1A750E005F700 /* Pods-RunaudioTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		844677AADEDF0E1ABE8C8BEA308D72CE /* SwiftChart */ = {
+			isa = PBXGroup;
+			children = (
+				2CB13F972F3B77B583645B30A456160E /* Chart.swift */,
+				1EAAC77638A2D9B88445D4DCE34BD6E1 /* ChartColors.swift */,
+				02A165B1AD01E5C3249C068D45536F95 /* ChartSeries.swift */,
+				DDFB8483963381E05DF803E39CC89874 /* Support Files */,
+			);
+			name = SwiftChart;
+			path = SwiftChart;
+			sourceTree = "<group>";
+		};
+		8DE468C7E0A2FC7879F2E7E54D36F92C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2118901B203E7EDAB5A4F7146A7E19F0 /* Pods_Runaudio.framework */,
+				7D919E1CD4CF836C0D3C2338F06731FC /* Pods_RunaudioTests.framework */,
+				0386647CB37914AEC8D0A23E3BF2B668 /* SwiftChart.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				71B7291F733237863A94361DDBD72A96 /* Pods */,
+				8DE468C7E0A2FC7879F2E7E54D36F92C /* Products */,
+				71E064E4EA0FFCD9221FBA0C5A6BBFC0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D12CEC5BDDB748CB27B1A750E005F700 /* Pods-RunaudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D2EBFD21043D9357A5BC5DCB7BCD797 /* Pods-RunaudioTests.modulemap */,
+				D2D78EAE628C37FE9D6783CD0044C6F3 /* Pods-RunaudioTests-acknowledgements.markdown */,
+				405F2AB788AF47503DA6A26C3CB505FF /* Pods-RunaudioTests-acknowledgements.plist */,
+				27F21183F3A1B6AB718DA5AA57FAB55E /* Pods-RunaudioTests-dummy.m */,
+				DE037464336B1776BF19E61E5CA54E18 /* Pods-RunaudioTests-Info.plist */,
+				8E2B03D3937223B1B202FB846EAFDD16 /* Pods-RunaudioTests-umbrella.h */,
+				B3166D6C96AA390E083128A75651301A /* Pods-RunaudioTests.debug.xcconfig */,
+				442D8ADF2345156F008BFA97E8A98038 /* Pods-RunaudioTests.release.xcconfig */,
+			);
+			name = "Pods-RunaudioTests";
+			path = "Target Support Files/Pods-RunaudioTests";
+			sourceTree = "<group>";
+		};
+		DDFB8483963381E05DF803E39CC89874 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAB070CCCAF72189F3A0D131FF6DD343 /* SwiftChart.modulemap */,
+				8752C5AEA43889E38E52AF306FA80A0A /* SwiftChart.xcconfig */,
+				FB198D40652FA49A604F9A7C4E9F37A2 /* SwiftChart-dummy.m */,
+				DF8B3AF368B504A374DA4F2A6DD7365E /* SwiftChart-Info.plist */,
+				9E080BC0CD223CF34EFA798FB730E0EF /* SwiftChart-prefix.pch */,
+				EDD215E44BE794458FAF6F7C69AEC9E9 /* SwiftChart-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftChart";
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		53D384245C028BC7C4E674F639850B13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EDDB5C72F0097B88631DA9EE8C1AEFF /* Pods-Runaudio-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DBDDA7A7C87370629AD4EBBB645B67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270E08054AD0B2EE58FC977AC6511CB6 /* Pods-RunaudioTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C1F06F7D5949312F39A6B7B93A9380 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6B025901B92784B8037B236F392AA3 /* SwiftChart-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E7BD5B8067AD0B7AFB7967E30BF1BB8 /* SwiftChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01C92B5C91FB34518F35871F48660483 /* Build configuration list for PBXNativeTarget "SwiftChart" */;
+			buildPhases = (
+				91C1F06F7D5949312F39A6B7B93A9380 /* Headers */,
+				67CE8E2CA5EBDB8230D41321BB9632B4 /* Sources */,
+				7C75323E3A181BCC5B455CBD0102BF7E /* Frameworks */,
+				923DC915C4C0B60AEC3A935835AA08C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftChart;
+			productName = SwiftChart;
+			productReference = 0386647CB37914AEC8D0A23E3BF2B668 /* SwiftChart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		94339D919B9190B85A8FFC566697EC4B /* Pods-Runaudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB822317EB315AA9E163402015882DBE /* Build configuration list for PBXNativeTarget "Pods-Runaudio" */;
+			buildPhases = (
+				53D384245C028BC7C4E674F639850B13 /* Headers */,
+				BC3913ED3FCAAC4B59C2ED785D06C52D /* Sources */,
+				3BDE090C8E16BD79F035AB4D2001F6A0 /* Frameworks */,
+				B92D935C3235E7A80E133EF8FEE52335 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F96C5A64DF936A11C1DAEDE36242C51 /* PBXTargetDependency */,
+			);
+			name = "Pods-Runaudio";
+			productName = "Pods-Runaudio";
+			productReference = 2118901B203E7EDAB5A4F7146A7E19F0 /* Pods_Runaudio.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D96886307A9DFB4582EA511291D5E2EF /* Pods-RunaudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F90C82C60929966E575C5C5591EE36F /* Build configuration list for PBXNativeTarget "Pods-RunaudioTests" */;
+			buildPhases = (
+				79DBDDA7A7C87370629AD4EBBB645B67 /* Headers */,
+				AD4500040C3C3C8692E2AD86839A6FE3 /* Sources */,
+				564E6960EAF4924DA2F9090BE9AE8B79 /* Frameworks */,
+				FAC35B1A0A963D625C0C7887479B3E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C79786655F96CF886BA9C5F9C2A1688 /* PBXTargetDependency */,
+			);
+			name = "Pods-RunaudioTests";
+			productName = "Pods-RunaudioTests";
+			productReference = 7D919E1CD4CF836C0D3C2338F06731FC /* Pods_RunaudioTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8DE468C7E0A2FC7879F2E7E54D36F92C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94339D919B9190B85A8FFC566697EC4B /* Pods-Runaudio */,
+				D96886307A9DFB4582EA511291D5E2EF /* Pods-RunaudioTests */,
+				4E7BD5B8067AD0B7AFB7967E30BF1BB8 /* SwiftChart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		923DC915C4C0B60AEC3A935835AA08C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B92D935C3235E7A80E133EF8FEE52335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC35B1A0A963D625C0C7887479B3E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67CE8E2CA5EBDB8230D41321BB9632B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89F36993229D1B75DDCC7E56FC12B62 /* Chart.swift in Sources */,
+				373C85B7B6669A0A3705344EDAB91402 /* ChartColors.swift in Sources */,
+				F7951E078EEAB8901537CEA3C6C01859 /* ChartSeries.swift in Sources */,
+				0EFE27A8EFE011B8758BD790F5ECA609 /* SwiftChart-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4500040C3C3C8692E2AD86839A6FE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21D47848E88C14CD22986509D47A5C6 /* Pods-RunaudioTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3913ED3FCAAC4B59C2ED785D06C52D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9429AB72E0C8A263556D3C54AB37E4 /* Pods-Runaudio-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F96C5A64DF936A11C1DAEDE36242C51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftChart;
+			target = 4E7BD5B8067AD0B7AFB7967E30BF1BB8 /* SwiftChart */;
+			targetProxy = C97B10F7D3D1D4C0FE72F6721EBCC73E /* PBXContainerItemProxy */;
+		};
+		4C79786655F96CF886BA9C5F9C2A1688 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Runaudio";
+			target = 94339D919B9190B85A8FFC566697EC4B /* Pods-Runaudio */;
+			targetProxy = EAC1E225BDFD0B761326DE56769AED09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2CE47E7E2F218A68A8700477C5B28155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8752C5AEA43889E38E52AF306FA80A0A /* SwiftChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftChart/SwiftChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftChart/SwiftChart-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftChart/SwiftChart.modulemap";
+				PRODUCT_MODULE_NAME = SwiftChart;
+				PRODUCT_NAME = SwiftChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57B70204BC9FE86FBC6F0014514CD0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3166D6C96AA390E083128A75651301A /* Pods-RunaudioTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RunaudioTests/Pods-RunaudioTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RunaudioTests/Pods-RunaudioTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81CAFFC51C0F177B1FCB004FAC3D98D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8752C5AEA43889E38E52AF306FA80A0A /* SwiftChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftChart/SwiftChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftChart/SwiftChart-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftChart/SwiftChart.modulemap";
+				PRODUCT_MODULE_NAME = SwiftChart;
+				PRODUCT_NAME = SwiftChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD9ACDE18E7A35CBB7A523D6C5132B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EEC1BB59E70C74257CAE9A6325A7AE6 /* Pods-Runaudio.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Runaudio/Pods-Runaudio-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runaudio/Pods-Runaudio.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7A0EAE4AA4B68549DF2FD73FD8766DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2695439229F47F6AB0E5D9E67930BD7B /* Pods-Runaudio.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Runaudio/Pods-Runaudio-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runaudio/Pods-Runaudio.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FCD6E92D598C4C141279C7A29C8E77E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 442D8ADF2345156F008BFA97E8A98038 /* Pods-RunaudioTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RunaudioTests/Pods-RunaudioTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RunaudioTests/Pods-RunaudioTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01C92B5C91FB34518F35871F48660483 /* Build configuration list for PBXNativeTarget "SwiftChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE47E7E2F218A68A8700477C5B28155 /* Debug */,
+				81CAFFC51C0F177B1FCB004FAC3D98D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F90C82C60929966E575C5C5591EE36F /* Build configuration list for PBXNativeTarget "Pods-RunaudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57B70204BC9FE86FBC6F0014514CD0E0 /* Debug */,
+				FCD6E92D598C4C141279C7A29C8E77E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB822317EB315AA9E163402015882DBE /* Build configuration list for PBXNativeTarget "Pods-Runaudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A0EAE4AA4B68549DF2FD73FD8766DD /* Debug */,
+				AD9ACDE18E7A35CBB7A523D6C5132B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
