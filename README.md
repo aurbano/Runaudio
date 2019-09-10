@@ -6,7 +6,7 @@ iOS app that will play music at the BPM you're currently walking/running
 ## What?
 
 So I was running on a treadmill and pretty randomly a song played that matched my stepping rythm.
-It made me realise how **awesome** it feels to be able to run exactly to a song's beat.
+It made me realise how **awesome** it feels to be able to run exactly to a song's beat!
 
 This is exactly what [RockMyRun](https://apps.apple.com/gb/app/rockmyrun-workout-music/id546417608) does, but I just wanted to learn how to do it myself :)
 
